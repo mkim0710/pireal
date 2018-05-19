@@ -23,7 +23,7 @@ keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
 # Site settings
 url: http://centaurialpha.github.io/pireal
-baseurl: ""
+baseurl: "/"
 # baseurl: ""
 
 # Author settings
