@@ -20,6 +20,5 @@ env:
 branches:
   only:
   - gh-pages
-  - source
 notifications:
   email: false
