@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: expanded # compressed # expanded
+
+# permalink and highlighter
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
+
+# SEO settings
+title: pireal
+description: "A free cross-platform tool for working with Relational Algebra"
+keywords: "Jekyll, theme, free, download, SEO, blog, web"
+
+# Site settings
+url: http://centaurialpha.github.io/pireal
+baseurl: ""
+# baseurl: ""
+
+# Author settings
+author:
+  name      : Gabriel Acosta
+  job       : Python Developer
+  bio       : ""
+  thumb     : /images/author.jpg
+  email     : acostadariogabriel@gmail.com
+  url       : http://centaurialpha.github.io
+  github    : http://github.com/centaurialpha/pireal
+  # twitter   : http://twitter.com/_alfacentauri
+  # facebook  : http://facebook.com/fernando.dev
+  # linkedin  : http://linkedin.com/in/nandomoreirame
+
+# google_analytics: UA-52446115-1
+# repo: http://github.com/centaurialpha/pireal
+
+# comments
+# disqus_shortname: "fernandomoreira"
