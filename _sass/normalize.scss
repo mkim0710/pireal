@@ -7,7 +7,7 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: "Ubuntu", sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -229,7 +229,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: "Ubuntu", monospace, monospace;
   font-size: 1em;
 }
 

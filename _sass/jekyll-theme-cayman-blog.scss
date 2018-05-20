@@ -28,7 +28,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
@@ -109,17 +109,18 @@ a {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
+  letter-spacing: 20px;
 
   @include large {
-    font-size: 3.25rem;
+    font-size: 4.25rem;
   }
 
   @include medium {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
   }
 
   @include small {
-    font-size: 1.75rem;
+    font-size: 2.75rem;
   }
 }
 
@@ -206,7 +207,7 @@ a {
 
   code {
     padding: 2px 4px;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: "Ubuntu", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
     color: $code-text-color;
     background-color: $code-bg-color;

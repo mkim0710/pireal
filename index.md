@@ -8,10 +8,4 @@
 layout: home
 ---
 
-Cayman Blog Theme is a clean, responsive blogging theme for Jekyll, with social features. It is inspired by the Cayman Theme for Github Pages, which can be greatly used for single projects but not as blogging platform.
-
-This theme has instead all you need to start today blogging with Jekyll, and no effort: pages, posts, few social buttons. Try loading this on mobile too.
-
-Have a look at the Github page for more information.
-
-You find this descriptive text in the `index.md` file, so you can change it, or remove it completely, according to your needs.
+Pireal is a tool that allows to evaluate queries written in the language of relational algebra and visualize the result of a particular query. All this from an intuitive interface.<br>Queries are made to a database. A database contains tables/relationships, both the database and the relationships can be created/edited from Pireal or from a text editor.
