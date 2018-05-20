@@ -28,7 +28,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Ubuntu","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
@@ -91,7 +91,7 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  // background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
 
   @include large {
     padding: 5rem 6rem;
@@ -109,18 +109,17 @@ a {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
-  letter-spacing: 20px;
 
   @include large {
-    font-size: 4.25rem;
-  }
-
-  @include medium {
     font-size: 3.25rem;
   }
 
+  @include medium {
+    font-size: 2.25rem;
+  }
+
   @include small {
-    font-size: 2.75rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -207,7 +206,7 @@ a {
 
   code {
     padding: 2px 4px;
-    font-family: Consolas, "Ubuntu", "Liberation Mono", Menlo, Courier, monospace;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
     color: $code-text-color;
     background-color: $code-bg-color;

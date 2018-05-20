@@ -5,6 +5,3 @@ rvm: 2.2
 
 install: script/bootstrap
 script: script/cibuild
-branches:
-  only:
-    - gh-pages
