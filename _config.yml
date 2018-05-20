@@ -1,46 +1,111 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# ----
+# Site
 
-source: source
-destination: _site
-sass:
-  sass_dir: _sass
-  style: expanded # compressed # expanded
+title: Hydra Template
+url: "https://proud-alligator.cloudvent.net"
+baseurl:
+google_analytics_key:
+google_maps_javascript_api_key:
+disqus_shortname:
 
-# permalink and highlighter
-permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : pygments
-
-# SEO settings
-title: dotX
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
-
-# Site settings
-url: http://centaurialpha.github.io
-baseurl: ""
-# baseurl: ""
-
-# Author settings
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Product marketing template for Jekyll.
 author:
-  name      : Gabriel Acosta
-  job       : Python dev
-  bio       : ""
-  thumb     : /images/author.jpg
-  email     : acostadariogabriel@gmail.com
-  url       : http://centaurialpha.github.io
-  github    : http://github.com/centaurialpha
-  twitter   : http://twitter.com/_alfacentauri
-  # facebook  : http://facebook.com/fernando.dev
-  # linkedin  : http://linkedin.com/in/nandomoreirame
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: Hydra Template
+  links:
+    - https://github.com/CloudCannon/hydra-jekyll-template
 
-# google_analytics: UA-52446115-1
-repo: http://github.com/centaurialpha/pireal
+# -----
+# Build
 
-# comments
-# disqus_shortname: "fernandomoreira"
+timezone: Etc/UTC
+
+collections:
+  staff_members:
+    _hide_content: true
+
+paginate: 10
+paginate_path: "/blog/:num/"
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1500
+          height: 2500
+  -
+    scope:
+      path: ""
+      type: "staff_members"
+    values:
+      _options:
+        image_path:
+          width: 600
+          height: 600
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "index.html"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "contact.html"
+    values:
+      full_width: true
+
+jekyll-archives:
+  enabled:
+    - categories
+
+plugins:
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+social_icons:
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS
+
+_comments:
+  map: Update the map location and display settings.
+  latitude: Coordinates for the center marker on the map.
+  longitude: Coordinates for the center marker on the map.
+  zoom: The zoom level for the map.
+  pricing_table: Update the information in the pricing tables.
+  highlight: Emphasis the text
+  color: The background colour used in the plan name and call to action.
+  new_window: Open link in new window
