@@ -1,125 +1,48 @@
-.blog-posts {
-	list-style: none;
-	padding: 0;
+@charset "utf-8";
 
-	li {
-		margin: 100px 0;
-	}
+// Define defaults for each variable.
+
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       $section-headings-color !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #2a7ae2 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+//$content-width:    800px !default;
+$navbar-width:    54em !default;
+
+$on-palm:          38em !default;
+$on-laptop:        54em !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
-.blog-post {
-	.author {
-		padding: 30px 0 0 0;
-		border: 1px solid #eee;
-		margin: 30px 0;
-		font-size: .8em;
-
-		.square-image {
-			width: 125px;
-			height: 125px;
-			margin-top: 0;
-		}
-		.blurb {
-			text-align: center;
-		}
-	}
-
-	h3 {
-		margin: 0;
-		a {
-			color: #000;
-			text-decoration: none;
-			font-weight: normal;
-			font-size: 1.3em;
-		}
-	}
-
-	h2 {
-		text-align: left;
-	}
-
-	.blog-navigation {
-		font-size: 14px;
-		display: block;
-		width: auto;
-		overflow: hidden;
-		a {
-			display: block;
-			width: 50%;
-			float: left;
-			margin: 1em 0;
-		}
-
-		.next {
-			text-align: right;
-		}
-	}
-
-	.post-details {
-		border-bottom: 1px solid #eee;
-		font-size: .9em;
-
-		.blog-filter {
-			display: inline-block;
-			text-align: left;
-
-			a {
-				position: relative;
-				top: -5px;
-			}
-		}
-
-		a {
-			text-decoration: none;
-		}
-
-		.post-date {
-			float: right;
-		}
-
-		&:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-	}
-
-	.post-content {
-		.button {
-			margin: 30px 0 0 0;
-		}
-	}
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
 }
 
-.pagination {
-	text-align: center;
-}
-
-.blog-filter {
-	text-align: center;
-	a {
-		background: #eee;
-    padding: 3px 5px;
-    font-size: .8em;
-    border-radius: 5px;
-    color: #888;
-		transition: .2s ease-in-out;
-
-		&:hover {
-			color: #555;
-			text-decoration: none;
-		}
-	}
-}
-
-.blog-filter.cross a {
-	padding-right: 8px;
-
-	&:after {
-		content: "x";
-		font-size: .5em;
-		position: relative;
-		bottom: 4px;
-		right: -3px;
-	}
-}
+// Import partials.
+@import
+  "blog/base",
+  "blog/layout"
+;
