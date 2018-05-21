@@ -16,10 +16,10 @@ theme: # leave it empty
 # Links pireal
 pireal:
   source: lalaal
-  github-url: lala
   release: lala
   repo: https://github.com/centaurialpha/pireal/
 
+pireal-screenshot: /pireal.png
 # social
 author: "Gabriel Acosta"
 image: /thumbnail-jumbo.png

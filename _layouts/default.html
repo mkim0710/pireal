@@ -56,12 +56,12 @@
     <section class="page-header">
       <h1 class="project-name">{{ page-title }}</h1>
       <h2 class="project-tagline">{{ page-tagline }}</h2>
-      <a href="{{ pireal.release }}" class="btn">Download last version <small style="color: #aaa">v3.0</small></a>
-      <a href="{{ pireal.source }}" class="btn">Download Source Code</a>
+      <a href="{{ site.pireal.release }}" class="btn">Download last version <small style="color: #aaa">v3.0</small></a>
+      <a href="{{ site.pireal.source }}" class="btn">Download Source Code</a>
       <br>
-      <a href="{{ pireal.repo }}" style="color: #aaa">View on GitHub</a>
+      <a href="{{ site.pireal.repo }}" style="color: #aaa">View on GitHub</a>
       <br><br>
-      <img src="https://github.com/centaurialpha/pireal/blob/gh-pages/pireal.png" width="90%">
+      <img src="{{ site.pireal-screenshot }}" width="90%">
       <!-- Post tagline -->
       {% if page.layout == 'post' %}
         <h2 class="project-date">
