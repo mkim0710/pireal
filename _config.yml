@@ -19,7 +19,7 @@ pireal:
   release: lala
   repo: https://github.com/centaurialpha/pireal/
 
-pireal-screenshot: /pireal.png
+pireal-screenshot: pireal.png
 # social
 author: "Gabriel Acosta"
 image: /thumbnail-jumbo.png
