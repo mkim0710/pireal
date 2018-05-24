@@ -15,8 +15,8 @@ theme: # leave it empty
 
 # Links pireal
 pireal:
-  source: lalaal
-  release: lala
+  source: https://github.com/centaurialpha/pireal/archive/v3.0.zip
+  release: https://github.com/centaurialpha/pireal/releases/tag/v3.0
   repo: https://github.com/centaurialpha/pireal/
 
 pireal-screenshot: pireal.png
