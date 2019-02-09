@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-destination: _site
+# destination: _site
 sass:
   sass_dir: _sass
   style: expanded # compressed # expanded
@@ -42,4 +42,4 @@ author:
 repo: http://github.com/centaurialpha/pireal
 
 # comments
-disqus_shortname: ""
+disqus_shortname: centaurialpha
