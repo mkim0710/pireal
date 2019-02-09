@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# destination: _site
+destination: _site
 sass:
   sass_dir: _sass
   style: expanded # compressed # expanded
@@ -21,8 +21,8 @@ description: ""
 keywords: ""
 
 # Site settings
-url: ""
-baseurl: ""
+# url: ""
+# baseurl: ""
 # baseurl: ""
 
 # Author settings
