@@ -14,7 +14,7 @@ sass:
 permalink   : /:year/:title/
 markdown    : kramdown
 # highlighter : pygments
-
+last_release: v3.0
 # SEO settings
 title: Pireal
 description: "A free cross-platform tool for working with Relational Algebra"
