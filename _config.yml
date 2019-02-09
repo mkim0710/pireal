@@ -1,34 +1,46 @@
-title: πreal
-description: A free cross-platform tool for working with Relational Algebra
-show_downloads: true
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-baseurl: "/" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://centaurialpha.github.io/pireal" # change this to the base hostname & protocol for your site
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: expanded # compressed # expanded
 
-google_analytics:
-# cayman-blog date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-cayman-blog:
-  date_format: "%b %-d, %Y"
+# permalink and highlighter
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
 
-theme: # leave it empty
+# SEO settings
+title: Pireal
+description: "A free Jekyll theme for download"
+keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
-# Links pireal
-pireal:
-  source: https://github.com/centaurialpha/pireal/archive/v3.0.zip
-  release: https://github.com/centaurialpha/pireal/releases/tag/v3.0
-  repo: https://github.com/centaurialpha/pireal/
+# Site settings
+url: http://nandomoreira.me
+baseurl: ""
+# baseurl: ""
 
-pireal-screenshot: pireal.png
-# social
-author: "Gabriel Acosta"
-image: /thumbnail-jumbo.png
-twitter:
-  username: _alfacentauri
-#  site:
-facebook:
-  #publisher: 1592372034171500
-  #profile_id: 1809805629
-  # app_id: 1798910940422432 # cayman-blog
-  #authors: lorepirri
-#  admins:
+# Author settings
+author:
+  name      : Fernando Moreira
+  job       : Frontend Engineer
+  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  thumb     : /images/author.jpg
+  email     : nandomoreira.me@gmail.com
+  url       : http://nandomoreira.me
+  github    : http://github.com/nandomoreirame
+  twitter   : http://twitter.com/nandomoreirame
+  facebook  : http://facebook.com/fernando.dev
+  linkedin  : http://linkedin.com/in/nandomoreirame
+
+# google_analytics: UA-52446115-1
+repo: http://github.com/centaurialpha/pireal
+
+# comments
+disqus_shortname: "fernandomoreira"
