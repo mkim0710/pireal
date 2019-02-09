@@ -17,8 +17,8 @@ markdown    : kramdown
 
 # SEO settings
 title: Pireal
-description: ""
-keywords: ""
+description: "A free cross-platform tool for working with Relational Algebra"
+keywords: "relational, algebra, free software, open source"
 
 # Site settings
 # url: ""
@@ -32,9 +32,9 @@ author:
   # bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
   # thumb     : /images/author.jpg
   email     : acostadariogabriel@gmail.com
-  # url       : http://nandomoreira.me
+  url       : http://centaurialpha.github.io
   github    : http://github.com/centaurialpha
-  # twitter   : http://twitter.com/nandomoreirame
+  twitter   : http://twitter.com/_alfacentauri
   # facebook  : http://facebook.com/fernando.dev
   # linkedin  : http://linkedin.com/in/nandomoreirame
 
@@ -42,4 +42,4 @@ author:
 repo: http://github.com/centaurialpha/pireal
 
 # comments
-disqus_shortname: centaurialpha
+disqus_shortname: "centaurialpha"
